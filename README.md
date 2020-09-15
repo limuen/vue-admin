@@ -1,6 +1,6 @@
 ## 简介
 
-[vue-element-admin-express](https://github.com/limuen/vue-element-admin-express) 是一个后台前端解决方案，它基于 [vue](https://github.com/vuejs/vue) 和 [element-ui](https://github.com/ElemeFE/element)以及[express](https://www.expressjs.com.cn/)实现。它使用了最新的前端技术栈，内置了动态路由，权限验证，并提供了简单的后端API服务，开箱即用，帮助你快速构建前后端分离动态路由和权限模型。
+[vue-admin](https://github.com/limuen/vue-admin) 是一个后台前端解决方案，它基于 [vue](https://github.com/vuejs/vue) 和 [element-ui](https://github.com/ElemeFE/element)以及[express](https://www.expressjs.com.cn/)实现。它使用了最新的前端技术栈，内置了动态路由，权限验证，并提供了简单的后端API服务，开箱即用，帮助你快速构建前后端分离动态路由和权限模型。
 
 本项目通过[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)精简改造，移除了大部分组件，如需要其他组件，可前往搬运。
 
@@ -29,7 +29,7 @@
 
 ```bash
 # 进入server端目录
-cd vue-element-admin-express/server
+cd vue-admin/server
 
 # 安装依赖
 npm install
@@ -51,10 +51,10 @@ npm run start
 
 ```bash
 # 克隆项目
-git clone https://github.com/limuen/vue-element-admin-express.git
+git clone https://github.com/limuen/vue-admin.git
 
 # 进入项目目录
-cd vue-element-admin-express
+cd vue-admin
 
 # 安装依赖
 npm install
