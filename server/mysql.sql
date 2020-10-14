@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 80017
  Source Host           : 127.0.0.1:3306
- Source Schema         : vue-element-admin
+ Source Schema         : limuen
 
  Target Server Type    : MySQL
  Target Server Version : 80017

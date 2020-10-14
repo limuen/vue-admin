@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 
 const sequelize = new Sequelize(
-  'vue-element-admin', // 数据库名
+  'limuen', // 数据库名
   'root', // 用户名
   'limuen520', // 密码
   {
