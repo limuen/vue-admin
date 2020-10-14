@@ -43,20 +43,20 @@
           <span v-else>--</span>
         </template>
       </el-table-column>
-      <el-table-column prop="component" label="组件路径" :show-overflow-tooltip="true" />
-      <el-table-column prop="path" label="路由路径" :show-overflow-tooltip="true" />
-      <el-table-column label="跳转路径" :show-overflow-tooltip="true">
+      <el-table-column prop="component" label="组件路径" :show-overflow-tooltip="true" align="center" />
+      <el-table-column prop="path" label="路由路径" :show-overflow-tooltip="true" align="center" />
+      <el-table-column label="跳转路径" :show-overflow-tooltip="true" align="center">
         <template slot-scope="scope">
           {{ scope.row.redirect || '--' }}
         </template>
       </el-table-column>
-      <el-table-column label="权限标识" :show-overflow-tooltip="true">
+      <el-table-column label="权限标识" :show-overflow-tooltip="true" align="center">
         <template slot-scope="scope">
           {{ scope.row.permission || '--' }}
         </template>
       </el-table-column>
-      <el-table-column prop="sort" label="排序" width="60px" />
-      <el-table-column prop="visible" label="可见" width="80">
+      <el-table-column prop="sort" label="排序" width="60px" align="center" />
+      <el-table-column prop="visible" label="可见" width="80" align="center">
         <template slot-scope="scope">
           <el-tag
             :type="scope.row.hidden ? 'danger' : 'success'"
@@ -70,7 +70,7 @@
           <span>{{ parseTime(scope.row.create_time) }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
+      <el-table-column label="操作" align="center" width="300" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button
             v-permission="['system:menu:edit']"

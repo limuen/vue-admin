@@ -52,15 +52,15 @@
       </el-col>
     </el-row>
 
-    <el-table v-loading="loading" :data="userList" @selection-change="handleSelectionChange">
+    <el-table v-loading="loading" :data="userList" width="100%" @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" align="center" />
-      <el-table-column label="用户帐号" prop="user_name" width="120" />
-      <el-table-column label="角色" prop="role_name" :show-overflow-tooltip="true" width="150">
+      <el-table-column label="用户帐号" prop="user_name" align="center" />
+      <el-table-column label="角色" prop="role_name" :show-overflow-tooltip="true" width="150" align="center">
         <template slot-scope="scope">
           <span>{{ scope.row.roles|mergeRoles }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="状态" align="center" width="100">
+      <el-table-column label="状态" align="center">
         <template slot-scope="scope">
           <el-tag
             :type="scope.row.status ? 'success' : 'info'"
@@ -69,17 +69,17 @@
           </el-tag>
         </template>
       </el-table-column>
-      <el-table-column label="修改时间" align="center" prop="update_time" width="180">
+      <el-table-column label="修改时间" align="center" prop="update_time">
         <template slot-scope="scope">
           <span>{{ scope.row.update_time ? parseTime(scope.row.update_time) : '--' }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="创建时间" align="center" prop="create_time" width="180">
+      <el-table-column label="创建时间" align="center" prop="create_time">
         <template slot-scope="scope">
           <span>{{ parseTime(scope.row.create_time) }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
+      <el-table-column label="操作" align="center" width="300" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button
             v-permission="['system:user:edit']"
@@ -88,13 +88,13 @@
             icon="el-icon-edit"
             @click="handleUpdate(scope.row)"
           >修改</el-button>
-          <el-button
+          <!-- <el-button
             v-permission="['system:user:edit']"
             size="mini"
             type="text"
             icon="el-icon-edit"
             @click="handleUpdatePwd(scope.row)"
-          >修改密码</el-button>
+          >修改密码</el-button> -->
           <el-button
             v-permission="['system:user:del']"
             size="mini"

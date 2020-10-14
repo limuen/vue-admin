@@ -33,11 +33,11 @@
     </el-row>
     <el-table v-loading="loading" :data="logList" @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" align="center" />
-      <el-table-column label="编号" prop="user_log_id" width="100" />
-      <el-table-column label="用户帐号" prop="user.user_name" width="100" />
-      <el-table-column label="IP" prop="ip" width="120" />
-      <el-table-column label="UA" prop="ua" :show-overflow-tooltip="true" />
-      <el-table-column label="登录时间" prop="create_time" width="150" />
+      <el-table-column label="编号" prop="user_log_id" width="100" align="center" />
+      <el-table-column label="用户帐号" prop="user.user_name" width="100" align="center" />
+      <el-table-column label="IP" prop="ip" width="120" align="center" />
+      <el-table-column label="UA" prop="ua" :show-overflow-tooltip="true" align="center" />
+      <el-table-column label="登录时间" prop="create_time" width="170" align="center" />
     </el-table>
     <pagination
       :total="total"
@@ -84,7 +84,7 @@ export default {
     getList() {
       this.queryParams.date = this.dateRange
       listLog(this.queryParams).then(response => {
-        console.log(response,'response')
+        console.log(response, 'response')
         this.logList = response.data.logs
         this.total = response.data.total
         this.loading = false
