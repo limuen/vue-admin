@@ -46,7 +46,7 @@ router.post('/login', (req, res, next) => {
           expiresIn: 3600 * 2
         }
       )
-
+      console.log(token)
       const logData = {
         user_id: user.user_id,
         ip: req.headers['x-forwarded-for'] || req.connection.remoteAddress,

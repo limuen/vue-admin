@@ -22,6 +22,9 @@
           <i class="el-icon-caret-bottom" />
         </div>
         <el-dropdown-menu slot="dropdown">
+          <a target="_blank" href="https://github.com/limuen/vue-admin">
+            <el-dropdown-item>项目地址</el-dropdown-item>
+          </a>
           <a target="_blank" href="https://www.limuen.cn">
             <el-dropdown-item>博客</el-dropdown-item>
           </a>
