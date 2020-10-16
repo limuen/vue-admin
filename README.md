@@ -37,8 +37,8 @@ npm install
 # 建议不要直接使用 cnpm 安装依赖，会有各种诡异的 bug。可以通过如下操作解决 npm 下载速度慢的问题
 npm install --registry=https://registry.npm.taobao.org
 
-# vue-element-admin-express/server/mysql.sql 导入数据表到mysql数据库
-# vue-element-admin-express/server/model/init.js 配置数据库信息:数据库名，登录账号，登录密码，ip,端口
+# vue-admin/server/mysql.sql 导入数据表到mysql数据库
+# vue-admin/server/model/init.js 配置数据库信息:数据库名，登录账号，登录密码，ip,端口
 
 # 启动 默认绑定ip：127.0.0.1 端口：3001, 可以在app.js指定你需要的ip和端口
 npm run start
