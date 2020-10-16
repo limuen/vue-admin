@@ -48,14 +48,14 @@
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登 录</el-button>
 
       <div style="position:relative">
-        <div class="tips">
+        <!-- <div class="tips">
           <span>帐号 : limuen</span>
           <span>密码 : limuen.cn</span>
-        </div>
-        <div class="tips">
+        </div> -->
+        <!-- <div class="tips">
           <span>帐号 : limuencom</span>
           <span>密码 : limuen.com</span>
-        </div>
+        </div> -->
       </div>
     </el-form>
   </div>
@@ -82,8 +82,8 @@ export default {
     }
     return {
       loginForm: {
-        username: 'limuen',
-        password: 'limuen.cn'
+        username: 'limuencom',
+        password: 'limuen.com'
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
