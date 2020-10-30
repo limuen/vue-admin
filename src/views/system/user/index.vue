@@ -379,7 +379,8 @@ export default {
     /** 删除按钮操作 */
     handleDelete(row) {
       const user_ids = row.user_id ? [row.user_id] : this.ids
-      this.$confirm('是否确认删除用户编号为"' + user_ids + '"的数据项?', '警告', {
+      // '是否确认删除用户编号为"' + user_ids + '"的数据项?'
+      this.$confirm(`是否确认删除用户编号为"${user_ids}"的数据项?`, '警告', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
